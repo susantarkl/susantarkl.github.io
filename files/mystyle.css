@@ -97,7 +97,7 @@ h2{
         box-sizing: border-box;
         overflow-x: hidden;
         overflow-y: auto;
-        width: 250px;
+        width: 80px;
         font-size: 13px;
         text-overflow: ellipsis;
     }
