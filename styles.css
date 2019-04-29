@@ -120,7 +120,7 @@
 #cssmenu .has-sub ul {
   display: none;
   position: absolute;
-  width: 100px;
+  width: 120px;
   top: 100%;
   left: 0;
 }
