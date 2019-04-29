@@ -120,7 +120,7 @@
 #cssmenu .has-sub ul {
   display: none;
   position: absolute;
-  width: 200px;
+  width: 100px;
   top: 100%;
   left: 0;
 }
@@ -132,7 +132,7 @@
   *margin-bottom: -1px;
 }
 #cssmenu .has-sub ul li a {
-  background: #db000b;
+  background: #26df79;
   border-bottom: 1px dotted #ff0f1b;
   font-size: 11px;
   filter: none;
