@@ -110,7 +110,6 @@
                                         motor cables:
                                         - measure insulation resistances of motor and
                                         motor cable.</td>  
-                               
                           </tr>  
                                                    <tr>  
                                <td>2330</td>  
@@ -123,7 +122,6 @@
                                         motor cables:
                                         - measure insulation resistances of motor and
                                         motor cable</td>  
-                               
                           </tr>  
                                                    <tr>  
                                <td>2340</td>  
@@ -138,7 +136,6 @@
                                <td>Check motor and motor cable.
                                         Check power semiconductors (IGBTs) of
                                         inverter module</td>  
-                                
                           </tr>  
                                                    <tr>  
                                <td>3130</td>  
@@ -151,7 +148,6 @@
                                    DC voltage</td>  
                                <td>Check mains fuses.
                                    Check for mains supply imbalance</td>  
-                                
                           </tr>  
                                                    <tr>  
                                <td>3200</td>  
@@ -161,7 +157,6 @@
                                    stopped.</td>  
                                <td>Close DC switch.
                                    Check AFSC-0x Fuse Switch Controller unit</td>  
-                                 
                           </tr>  
                                                    <tr>  
                                <td>3210</td>  
@@ -184,7 +179,6 @@
                                    Use coast-to-stop function (if applicable).
                                    Retrofit frequency converter with brake
                                    chopper and brake resistor.</td>  
-                               
                           </tr>  
                                                    <tr>  
                                <td>3211</td>  
@@ -194,145 +188,229 @@
                                    intermediate circuit DC voltage to too high or too</td>  
                                <td>Informative alarm
                                    Check Fault Function parameters</td>  
-                               <td>Landscaping worker</td>  
-                               <td>22</td>  
                           </tr>  
                                                    <tr>  
-                               <td>163</td>  
-                               <td>William C. Wright</td>  
-                               <td>2653 Pyramid Valley Road, Cedar Rapids, IA 52404</td>  
-                               <td>Male</td>  
-                               <td>Political geographer</td>  
-                               <td>33</td>  
+                               <td>3220</td>  
+                               <td>DC UNDERVOLT
+                                   03.06 FAULT WORD 2 bit 2</td>  
+                               <td>Intermediate circuit DC voltage is not sufficient
+                                   due to missing mains phase, blown fuse or
+                                   rectifier bridge internal fault.
+                                   DC undervoltage trip limit is 0.6 · U1min, where
+                                   U
+                                   1min is minimum value of mains voltage
+                                   range. For 400 V and 500 V units, U1min is
+                                   380 V. For 690 V units, U1min is 525 V. Actual
+                                   voltage in intermediate circuit corresponding to
+                                   mains voltage trip level is 307 V DC for 400 V
+                                   and 500 V units, and 425 V DC for 690 V units.</td>  
+                               <td>Check mains supply and fuses.</td>  
                           </tr>  
                                                    <tr>  
-                               <td>162</td>  
-                               <td>Jarrod D. Jones</td>  
-                               <td>3827 Bingamon Road, Garfield Heights, OH 44125</td>  
-                               <td>Male</td>  
-                               <td>Manpower development advisor</td>  
-                               <td>64</td>  
+                               <td>3381</td>  
+                               <td>POWERFAIL
+                                   03.17 FAULT WORD 5 bit 9</td>  
+                               <td>INT board powerfail in several inverter units of
+                                   parallel connected inverter modules</td>  
+                               <td>Check that INT board power cable is
+                                   connected.
+                                   Check that POW board is working correctly.
+                                   Replace INT board</td>  
                           </tr>  
                                                    <tr>  
-                               <td>161</td>  
-                               <td>Glenda J. Stewart</td>  
-                               <td>3482 Pursglove Court, Rossburg, OH 45362</td>  
-                               <td>Female</td>  
-                               <td>Cost consultant</td>  
-                               <td>28</td>  
+                               <td>3381</td>  
+                               <td>POWERF INV xx
+                                   03.17 FAULT WORD 5 bit 9
+                                   and 04.01 FAULTED INT INFO</td>  
+                               <td>INT board powerfail in inverter unit of several
+                                   parallel connected inverter modules. xx (1...12)
+                                   refers to inverter module number.</td>  
+                               <td>Check that INT board power cable is
+                                   connected.
+                                   Check that POW board is working correctly.
+                                   Replace INT board</td>  
                           </tr>  
                                                    <tr>  
-                               <td>8</td>  
-                               <td>Charles D. Horst</td>  
-                               <td>1636 Walnut Hill Drive  
-                               Cincinnati, OH 45202</td>  
-                               <td>Male</td>  
-                               <td>Financial investigator</td>  
-                               <td>29</td>  
+                               <td>4110</td>  
+                               <td>CTRL B TEMP
+                                   03.06 FAULT WORD 2 bit 7</td>  
+                               <td>Control board temperature is above 88°C</td>  
+                               <td>Check ambient conditions.
+                                   Check air flow.
+                                   Check main and additional cooling fans</td>  
                           </tr>  
                                                    <tr>  
-                               <td>7</td>  
-                               <td>Antonio J. Forbes</td>  
-                               <td>403 Snyder Avenue  
- Charlotte, NC 28208</td>  
-                               <td>Male</td>  
-                               <td>Faller</td>  
-                               <td>32</td>  
+                               <td>4210</td>  
+                               <td>ACS800 TEMP
+                                   03.05 FAULT WORD 1 bit 3</td>  
+                               <td>Drive IGBT temperature is excessive. Fault trip
+                                   limit is 100%</td>  
+                               <td>Check ambient conditions.
+                                   Check air flow and fan operation.
+                                   Check heatsink fins for dust pick-up.
+                                   Check motor power against unit power</td>  
                           </tr>  
                                                    <tr>  
-                               <td>6</td>  
-                               <td>Barbra K. Hurley</td>  
-                               <td>1241 Canis Heights Drive  
- Los Angeles, CA 90017</td>  
-                               <td>Female</td>  
-                               <td>Service technician</td>  
-                               <td>26</td>  
+                               <td>4210</td>  
+                               <td>ACS TEMP xx y
+                                   03.05 FAULT WORD 1 bit 3
+                                   04.01 FAULTED INT INFO</td>  
+                               <td>Excessive internal temperature in inverter unit
+                                   of several parallel connected inverter modules.
+                                   xx (1...12) refers to inverter module number
+                                   and y refers to phase (U, V, W)</td>  
+                               <td>Check ambient conditions.
+                                   Check air flow and fan operation.
+                                   Check heatsink fins for dust pick-up.
+                                   Check motor power against unit power</td>  
                           </tr>  
                                                    <tr>  
-                               <td>5</td>  
-                               <td>Clara Gilliam</td>  
-                               <td>63 Woodridge Lane  
- Memphis, TN 38138</td>  
-                               <td>Female</td>  
-                               <td>Programmer</td>  
-                               <td>24</td>  
+                               <td>4280</td>  
+                               <td>REPLACE FAN
+                                   03.18 ALARM WORD 5 bit 0</td>  
+                               <td>Running time of inverter cooling fan has
+                                   exceeded its estimated life time</td>  
+                               <td>Replace fan.
+                                   Reset fan run time counter 01.44</td>  
                           </tr>  
                                                    <tr>  
-                               <td>1</td>  
-                               <td>Bruce Tom</td>  
-                               <td>656 Edsel Road  
- Sherman Oaks, CA 91403</td>  
-                               <td>Male</td>  
-                               <td>Driver</td>  
-                               <td>36</td>  
+                               <td>4290</td>  
+                               <td>INV OVERTEMP
+                                   03.17 FAULT WORD 5 bit 13
+                                   03.31 ALARM WORD 6 bit 0</td>  
+                               <td>Converter module temperature is excessive</td>  
+                               <td>Check ambient temperature. If it exceeds
+                                   40°C, ensure that load current does not
+                                   exceed derated load capacity of drive. See
+                                   appropriate hardware manual.
+                                   Check that ambient temperature setting is
+                                   correct (parameter 95.10).
+                                   Check converter module cooling air flow and
+                                   fan operation.
+                                   Cabinet installation: Check cabinet air inlet
+                                   filters. Change when necessary. See
+                                   appropriate hardware manual.
+                                   Modules installed in cabinet by user: Check
+                                   that cooling air circulation in cabinet has been
+                                   prevented with air baffles. See module
+                                   installation instructions.
+                                   Check inside of cabinet and heatsink of
+                                   converter module for dust pick-up. Clean when
+                                   necessary</td>  
                           </tr>  
                           <tr>  
-                              <td>1</td>  
-                              <td>Bruce Tom</td>  
-                              <td>656 Edsel Road  
-                                herman Oaks, CA 91403</td>  
-                              <td>Male</td>  
-                              <td>Driver</td>  
-                              <td>36</td>  
+                              <td>4310</td>  
+                              <td>MOTOR TEMP
+                                   (programmable
+                                   Fault Function
+                                   30.04 … 30.09)
+                                   03.05 FAULT WORD 1 bit 6
+                                   03.08 ALARM WORD 1 bit 3</td>  
+                              <td>Motor temperature is too high (or appears to be
+                                   too high) due to excessive load, insufficient
+                                   motor power, inadequate cooling or incorrect
+                                   start-up data.</td>  
+                              <td>Check motor ratings and load.
+                                   Check start-up data.
+                                   Check Fault Function parameters.</td>  
                          </tr> 
                          <tr>  
-                              <td>1</td>  
-                              <td>Bruce Tom</td>  
-                              <td>656 Edsel Road  
-                                herman Oaks, CA 91403</td>  
-                              <td>Male</td>  
-                              <td>Driver</td>  
-                              <td>36</td>  
+                              <td>4311</td>  
+                              <td>THERMISTOR
+                                   03.05 FAULT WORD 1 bit 5
+                                   03.08 ALARM WORD 1 bit 2</td>  
+                              <td>Motor temperature is excessive. Motor thermal
+                                   protection mode selection is THERMISTOR</td>  
+                              <td>Check motor ratings and load.
+                                   Check start-up data.
+                                   Check thermistor connections to digital input
+                                   DI6</td>  
                          </tr> 
                          <tr>  
-                              <td>1</td>  
-                              <td>Bruce Tom</td>  
-                              <td>656 Edsel Road  
-                                herman Oaks, CA 91403</td>  
-                              <td>Male</td>  
-                              <td>Driver</td>  
-                              <td>36</td>  
+                              <td>4312</td>  
+                              <td>MOTOR 1 TEMP
+                                   03.15 FAULT WORD 4 bit 1
+                                   03.16 ALARM WORD 4 bit 1</td>  
+                              <td>Measured motor temperature has exceeded
+                                   fault limit set with parameter 35.03 parameter 35.02.</td>  
+                              <td>Check value of fault limit.
+                                   Let motor cool down. Ensure proper motor
+                                   cooling: Check cooling fan, clean cooling
+                                   surfaces, etc</td>  
                          </tr> 
                          <tr>  
-                              <td>1</td>  
-                              <td>Bruce Tom</td>  
-                              <td>656 Edsel Road  
-                                herman Oaks, CA 91403</td>  
-                              <td>Male</td>  
-                              <td>Driver</td>  
-                              <td>36</td>  
+                              <td>4380</td>  
+                              <td>TEMP DIF xx y
+                                   03.17 FAULT WORD 5 bit 8
+                                   04.01 FAULTED INT INFO</td>  
+                              <td>Excessive temperature difference between
+                                   several parallel connected inverter modules.
+                                   xx (1...12) refers to inverter module number
+                                   and y refers to phase (U, V, W).
+                                   Alarm is indicated when temperature difference
+                                   is 15°C. Fault is indicated when temperature
+                                   difference is 20°C.
+                                   Excessive temperature can be caused e.g. by
+                                   unequal current sharing between parallel
+                                   connected inverters.</td>  
+                              <td>Check cooling fan.
+                                   Replace fan.
+                                   Check air filters</td>  
                          </tr> 
                          <tr>  
-                              <td>1</td>  
-                              <td>Bruce Tom</td>  
-                              <td>656 Edsel Road  
-                                herman Oaks, CA 91403</td>  
-                              <td>Male</td>  
-                              <td>Driver</td>  
-                              <td>36</td>  
+                              <td>5210</td>  
+                              <td>PPCC LINK xx
+                                   03.06 FAULT WORD 2 bit 11
+                                   04.01 FAULTED INT
+                                   INFO</td>  
+                              <td>INT board fibre optic connection fault in
+                                   inverter unit of several parallel connected
+                                   inverter modules. xx refers to inverter module
+                                   number</td>  
+                              <td>Check connection from inverter module Main
+                                   Circuit Interface Board, INT to PPCC
+                                   Branching Unit, PBU. (Inverter module 1 is
+                                   connected to PBU INT1 etc.)
+                                   Check signal 03.19. Contact ABB
+                                   representative if any of faults in signal 3.19 are
+                                   active.</td>  
                          </tr> 
                          <tr>  
-                              <td>1</td>  
-                              <td>Bruce Tom</td>  
-                              <td>656 Edsel Road  
-                                herman Oaks, CA 91403</td>  
-                              
+                              <td>5210</td>  
+                              <td>PPCC LINK xx</td>  
+                              <td>Fibre optic link to INT board is faulty</td>  
+                              <td>Check fibre optic cables or galvanic link. With
+                                   frame sizes R2-R6 link is galvanic.
+                                   If RMIO is powered from external supply,
+                                   ensure that supply is on. See parameter 16.09
+                                   CTRL BOARD SUPPLY.
+                                   Check signal 03.19. Contact ABB
+                                   representative if any of faults in signal 3.19 are
+                                   active.</td>
                          </tr> 
                          <tr>  
-                              <td>1</td>  
-                              <td>Bruce Tom</td>  
-                              <td>656 Edsel Road  
-                                herman Oaks, CA 91403</td>  
-                              <td>Male</td>  
-                              <td>Driver</td>  
-                              <td>36</td>  
+                              <td>5300</td>  
+                              <td>PANEL LOSS
+                                   (programmable
+                                   Fault Function
+                                   30.02)
+                                   03.06 FAULT WORD 2 bit 13
+                                   03.09 ALARM WORD 2 bit 13</td>  
+                              <td>Control panel or DriveWindow selected as
+                                   active control location for drive has ceased
+                                   communicating</td>  
+                              <td>Check panel connection (see appropriate
+                                   hardware manual).
+                                   Check control panel connector.
+                                   Replace control panel in mounting platform.
+                                   Check Fault Function parameters.
+                                   Check DriveWindow connection.</td>  
                          </tr> 
                          <tr>  
-                              <td>1</td>  
-                              <td>Bruce Tom</td>  
-                              <td>656 Edsel Road  
-                                herman Oaks, CA 91403</td>  
-                               
+                              <td></td>  
+                              <td></td>  
+                              <td></td>  
+                              <td></td>
                          </tr> 
                                               </table>  
                                               
