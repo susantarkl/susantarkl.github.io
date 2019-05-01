@@ -19,10 +19,10 @@
                 <div class="table-responsive" >  
                      <table class="table table-bordered" id="employee_table">  
                           <tr>  
-                               <th width="5%">ID</th>  
+                               <th width="5%">CODE</th>  
                                <th width="25%">Name</th>  
-                               <th width="35%">Address</th>  
-                               <th width="35%">Gender</th>  
+                               <th width="35%">CAUSE</th>  
+                               <th width="35%">REMEDY</th>  
                                 
                           </tr>  
                                                    <tr>  
@@ -35,60 +35,110 @@
                                
                           </tr>  
                                                    <tr>  
-                               <td>174</td>  
-                               <td>Martha B. Tomlinson</td>  
-                               <td>4005 Bird Spring Lane, Houston, TX 77002</td>  
-                               <td>Female</td>  
-                               <td>Systems programmer</td>  
-                               <td>38</td>  
+                               <td>2212</td>  
+                               <td>INV CUR LIM
+                                        (programmable
+                                        Fault Function
+                                        30.23)
+                                        03.18 ALARM WORD 5 bit 8</td>  
+                               <td>Internal inverter current or power limit has
+                                        been exceeded</td>  
+                               <td>Reduce load or increase ramp time.
+                                        Limit inverter actual power or decrease lineside converter reactive power generation
+                                        reference value (parameter 95.06 LCU Q PW
+                                        REF)</td>  
+                                
                           </tr>  
                                                    <tr>  
-                               <td>173</td>  
-                               <td>Cameron K. Barnett</td>  
-                               <td>2822 River Road, Colorado Springs, CO 80903</td>  
-                               <td>Male</td>  
-                               <td>Mortgage loan officer</td>  
-                               <td>52</td>  
+                               <td>2300</td>  
+                               <td>MOT CUR LIM
+                                        03.18 ALARM WORD 5 bit 10</td>  
+                               <td>Drive limits motor current according to current
+                                        limit defined with parameter 20.03 MAXIMUM
+                                        CURRENT.</td>  
+                               <td>Reduce load or increase ramp time.
+                                        Increase parameter 20.03 MAXIMUM
+                                        CURRENT value</td>  
+                               
                           </tr>  
                                                    <tr>  
-                               <td>172</td>  
-                               <td>James V. Foreman</td>  
-                               <td>4881 Adams Drive, Houston, TX 77002</td>  
-                               <td>Male</td>  
-                               <td>Sports instructor</td>  
-                               <td>32</td>  
+                               <td>2310</td>  
+                               <td>OVERCURR xx
+                                        03.05 FAULT WORD 1 bit 1 and
+                                        04.01 FAULTED INT INFO</td>  
+                               <td>Overcurrent fault in inverter unit of several
+                                        parallel connected inverter modules. xx (1...12)
+                                        refers to inverter module number.</td>  
+                               <td>Check motor load.
+                                        Check acceleration time.
+                                        Check motor and motor cable (including
+                                        phasing).
+                                        Check encoder cable (including phasing).
+                                        Check motor nominal values from group 99
+                                        START-UP DATA to confirm that motor model
+                                        is correct.
+                                        Check that there are no power factor correction
+                                        or surge absorbers in motor cable</td>  
+ 
                           </tr>  
                                                    <tr>  
-                               <td>171</td>  
-                               <td>Dallas V. Jones</td>  
-                               <td>For the last two and a half motnts this village is being left uncared for by your postman on duty. Me hardly pays visit to us onec i a fortnight. So we do not get our money orders and parcels in time.</td>  
-                               <td>Male</td>  
-                               <td>Tractor driver</td>  
-                               <td>45</td>  
+                               <td>2312</td>  
+                               <td></td>  
+                               <td></td>  
+                               <td></td>  
+                                 
                           </tr>  
                                                    <tr>  
-                               <td>170</td>  
-                               <td>Patricia R. Lohman</td>  
-                               <td>2653 Courtright Street, Garrison, ND 58540</td>  
-                               <td>Female</td>  
-                               <td>Counseling psychologist</td>  
-                               <td>24</td>  
+                               <td>2330</td>  
+                               <td>CUR UNBAL xx
+                                        03.08 ALARM WORD 1 bit 14
+                                        03.05 FAULT WORD 1 bit 4
+                                        03.08 ALARM WORD 1 bit 14
+                                        and 04.01 FAULTED INT
+                                        INFO
+                                        03.08 ALARM WORD 1 bit 14</td>  
+                               <td>Drive has detected excessive output current
+                                        unbalance in inverter unit of several parallel
+                                        connected inverter modules. This can be
+                                        caused by external fault (earth fault, motor,
+                                        motor cabling, etc.) or internal fault (damaged
+                                        inverter component). xx (2...12) refers to
+                                        inverter module number</td>  
+                               <td>Check that there are no power factor correction
+                                        capacitors or surge absorbers in motor cable.
+                                        Check that there is no earth fault in motor or
+                                        motor cables:
+                                        - measure insulation resistances of motor and
+                                        motor cable.</td>  
+                               
                           </tr>  
                                                    <tr>  
-                               <td>169</td>  
-                               <td>Lee H. Young</td>  
-                               <td>4097 Cambridge Place, Cockeysville, MD 21030</td>  
-                               <td>Male</td>  
-                               <td>Refractory mason</td>  
-                               <td>24</td>  
+                               <td>2330</td>  
+                               <td>EARTH FAULT</td>  
+                               <td>Drive has detected load unbalance typically
+                                        due to earth fault in motor or motor cable</td>  
+                               <td>Check there are no power factor correction
+                                        capacitors or surge absorbers in motor cable.
+                                        Check that there is no earth fault in motor or
+                                        motor cables:
+                                        - measure insulation resistances of motor and
+                                        motor cable</td>  
+                               
                           </tr>  
                                                    <tr>  
-                               <td>168</td>  
-                               <td>Melina T. Reza</td>  
-                               <td>68 Elk Creek Road, Chamblee, GA 30341</td>  
-                               <td>Female</td>  
-                               <td>Manpower development manager</td>  
-                               <td>40</td>  
+                               <td>2340</td>  
+                               <td>SC INV xx y
+                                        3.05 FAULT WORD 1 bit 0
+                                        04.01 FAULTED INT INFO
+                                        and 04.02 INT SC INFO</td>  
+                               <td>Short circuit in inverter unit of several parallel
+                                        connected inverter modules. xx (1 ... 12) refers
+                                        to inverter module number and y refers to
+                                        phase (U, V, W).</td>  
+                               <td>Check motor and motor cable.
+                                        Check power semiconductors (IGBTs) of
+                                        inverter module</td>  
+                                
                           </tr>  
                                                    <tr>  
                                <td>167</td>  
