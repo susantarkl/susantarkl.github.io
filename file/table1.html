@@ -407,12 +407,486 @@
                                    Check DriveWindow connection.</td>  
                          </tr> 
                          <tr>  
+                              <td>5410</td>  
+                              <td>INT CONFIG
+                                   03.17 FAULT WORD 5 bit 10</td>  
+                              <td>Number of inverter modules is not equal to
+                                   original number of inverters</td>  
+                              <td>Check status of inverters. See signal 03.34
+                                   APPL CONTROL WORD.
+                                   Check fibre optic cables between APBU and
+                                   inverter modules.
+                                   If Reduced Run function is used, remove
+                                   faulted inverter module from main circuit and
+                                   write number of remaining inverter modules
+                                   into parameter 95.03 INT CONFIG USER.
+                                   Reset drive
+                                   16.10</td>
+                         </tr> 
+                         <tr>  
+                              <td>5482</td>  
+                              <td>PP OVERLOAD
+                                   03.17 FAULT WORD 5 bit 6
+                                   03.18 ALARM WORD 5 bit 5</td>  
+                              <td>Excessive IGBT junction to case temperature.
+                                   This fault protects IGBT(s) and it can be
+                                   activated by short circuit at output of long
+                                   motor cables</td>  
+                              <td>Check motor cables</td>
+                         </tr> 
+                         <tr>  
+                              <td>5482</td>  
+                              <td>PP OVERLOAD</td>  
+                              <td>Excessive IGBT junction to case temperature.
+                                   This can be caused by excessive load at low
+                                   frequencies (e.g. fast direction change with
+                                   excessive load and inertia).</td>  
+                              <td>Increase ramp time.
+                                   Reduce load</td>
+                         </tr> 
+                         <tr>  
+                              <td>5581</td>  
+                              <td>BATT FAILURE
+                                   03.18 ALARM WORD 5 bit 15</td>  
+                              <td>APBU branching unit memory backup battery
+                                   error caused by
+                                   - incorrect APBU switch S3 setting
+                                   - too low battery voltage</td>  
+                              <td>With parallel connected inverters, enable
+                                   backup battery by setting actuator 6 of switch
+                                   S3 to ON.
+                                   Replace backup battery.</td>
+                         </tr> 
+                         <tr>  
+                              <td>6320</td>  
+                              <td>PARAM CRC</td>  
+                              <td>CRC (Cyclic Redundancy Check) error</td>  
+                              <td>Switch control board power off and on again.
+                                   Reload firmware to control board.
+                                   Replace control board.</td>
+                         </tr> 
+                         <tr>  
+                              <td>7000</td>  
+                              <td>I/O COMM ERR
+                                   03.06 FAULT WORD 2 bit 6</td>  
+                              <td>Communication error on control board,
+                                   channel CH1
+                                   Electromagnetic interference</td>  
+                              <td>Check connections of fibre optic cables on
+                                   channel CH1.
+                                   Check all I/O modules (if present) connected to
+                                   channel CH1.
+                                   Check for proper earthing of equipment. Check
+                                   for highly emissive components nearby</td>
+                         </tr> 
+                         <tr>  
+                              <td>7110</td>  
+                              <td>BR BROKEN
+                                   03.17 FAULT WORD 5 bit 0</td>  
+                              <td>Brake resistor is not connected or it is
+                                   damaged.
+                                   Resistance rating of brake resistor is too high</td>  
+                              <td>Check resistor and resistor connection.
+                                   Check that resistance rating meets
+                                   specifications. See appropriate drive hardware
+                                   manual</td>
+                         </tr> 
+                         <tr>  
+                              <td>7111</td>  
+                              <td>BR WIRING
+                                   03.17 FAULT WORD 5 bit 1</td>  
+                              <td>Wrong connection of brake resistor</td>  
+                              <td>Check resistor connection.
+                                   Ensure brake resistor is not damaged</td>
+                         </tr> 
+                         <tr>  
+                              <td>7112</td>  
+                              <td>BR OVERHEAT
+                                   03.17 FAULT WORD 5 bit 3
+                                   03.18 ALARM WORD 5 bit 2</td>  
+                              <td>Brake resistor overload</td>  
+                              <td>Stop drive. Let resistor cool down.
+                                   Check parameter settings of resistor overload
+                                   protection function (see parameter group 27
+                                   BRAKE CHOPPER).
+                                   Check that braking cycle meets allowed limits.</td>
+                         </tr> 
+                         <tr>  
+                              <td>7113</td>  
+                              <td>BC SHORT CIR
+                                   03.17 FAULT WORD 5 bit 2</td>  
+                              <td>Short circuit in brake chopper IGBT(s)</td>  
+                              <td>Replace brake chopper.
+                                   Ensure brake resistor is connected and not
+                                   damaged.</td>
+                         </tr> 
+                         <tr>  
+                              <td>7114</td>  
+                              <td>BC OVERHEAT
+                                   3.17 FW 5 bit 4
+                                   3.18 AW 5 bit 3</td>  
+                              <td>Brake chopper overload</td>  
+                              <td>Let chopper cool down.
+                                   Check parameter settings of resistor overload
+                                   protection function (see parameter group 27
+                                   BRAKE CHOPPER).
+                                   Check that braking cycle meets allowed limits.
+                                   Check that drive supply AC voltage is not
+                                   excessive</td>
+                         </tr> 
+                         <tr>  
+                              <td>7121</td>  
+                              <td>MOTOR STALL
+                                   03.09 ALARM WORD 2 bit 9</td>  
+                              <td>Motor is operating in stall region due to e.g.
+                                   excessive load or insufficient motor power</td>  
+                              <td>Check motor load and drive ratings.
+                                   Check Fault Function parameters</td>
+                         </tr> 
+                         <tr>  
+                              <td>7123</td>  
+                              <td>OVERFREQ
+                                   3.05 FW 1 bit 9</td>  
+                              <td>Motor is turning faster than highest allowed
+                                   speed due to incorrectly set minimum/
+                                   maximum speed, insufficient braking torque or
+                                   changes in load when using torque reference.
+                                   Trip level is 40 Hz over operating range
+                                   absolute maximum speed limit (Direct Torque
+                                   Control mode active) or frequency limit (Scalar
+                                   Control active). Operating range limits are set
+                                   with parameters 20.01 and 20.02 (DTC mode
+                                   active) or 20.07 and 20.08 (Scalar Control
+                                   active)</td>  
+                              <td>Check minimum/maximum speed settings.
+                                   Check adequacy of motor braking torque.
+                                   Check applicability of torque control.
+                                   Check need for brake chopper and resistor(s).</td>
+                         </tr> 
+                         <tr>  
+                              <td>7301</td>  
+                              <td>ENCODER ERR
+                                   03.08 ALARM WORD 1 bit 5
+                                   03.06 FAULT WORD 2 bit 5</td>  
+                              <td>Communication fault between pulse encoder
+                                   and pulse encoder interface module and
+                                   between module and drive</td>  
+                              <td>Check pulse encoder and its wiring, pulse
+                                   encoder interface module and its wiring and
+                                   parameter group 50 ENCODER MODULE
+                                   settings</td>
+                         </tr> 
+                         <tr>  
+                              <td>7302</td>  
+                              <td>ENCODER A<>B
+                                   03.09 ALARM WORD 2 bit 4</td>  
+                              <td>Pulse encoder phasing is wrong: Phase A is
+                                   connected to terminal of phase B and vice
+                                   versa.</td>  
+                              <td>Interchange connection of pulse encoder
+                                   phases A and B</td>
+                         </tr> 
+                         <tr>  
+                              <td>7310</td>  
+                              <td></td>  
+                              <td></td>  
+                              <td></td>
+                         </tr> 
+                         <tr>  
+                              <td>7510</td>  
+                              <td>COMM MODULE
+                                   (programmable
+                                   Fault Function
+                                   30.18, 30.19)
+                                   03.06 FAULT WORD 2 bit 12
+                                   03.08 ALARM WORD 1 bit 12</td>  
+                              <td>Cyclical communication between drive and
+                                   master is lost.</td>  
+                              <td>Check status of fieldbus communication. See
+                                   chapter Fieldbus control, or appropriate
+                                   fieldbus adapter manual.
+                                   Check parameter settings:
+                                   - group 51 COMM MODULE DATA (for fieldbus
+                                   adapter), or
+                                   - group 52 STANDARD MODBUS (for
+                                   Standard Modbus Link).
+                                   Check Fault Function parameters.
+                                   Check cable connections.
+                                   Check if master can communicate.</td>
+                         </tr> 
+                         <tr>  
+                              <td>8110</td>  
+                              <td>AI < MIN FUNC
+                                   (programmable
+                                   Fault Function
+                                   30.01)
+                                   03.06 FAULT WORD 2 bit 10
+                                   03.09 ALARM WORD 2 bit 10</td>  
+                              <td>Analogue control signal is below minimum
+                                   allowed value due to incorrect signal level or
+                                   failure in control wiring.</td>  
+                              <td>Check for proper analogue control signal
+                                   levels.
+                                   Check control wiring.
+                                   Check Fault Function parameters</td>
+                         </tr> 
+                         <tr>  
+                              <td>9000</td>  
+                              <td>EXTERNAL FLT
+                                   (programmable
+                                   Fault Function
+                                   30.03)
+                                   03.06 FAULT WORD 2 bit 8</td>  
+                              <td>Fault in external device. (This information is
+                                   configured through one of programmable
+                                   digital inputs.)</td>  
+                              <td>Check external devices for faults.
+                                   Check parameter 30.03 EXTERNAL FAULT</td>
+                         </tr> 
+                         <tr>  
+                              <td>FF30</td>  
+                              <td>ID MAGN REQ</td>  
+                              <td>Motor identification is required. This warning
+                                   belongs to normal start-up procedure. The
+                                   drive expects you to select how motor
+                                   identification should be performed: With
+                                   Identification Magnetisation or with ID Run</td>  
+                              <td>Start Identification Magnetisation by pressing
+                                   Start key, or select ID Run and start (see
+                                   parameter 99.10).</td>
+                         </tr> 
+                         <tr>  
+                              <td>FF31</td>  
+                              <td>ID MAGN</td>  
+                              <td>Motor identification magnetisation is on. This
+                                   warning belongs to normal start-up procedure</td>  
+                              <td>Wait until drive indicates that motor
+                                   identification is completed</td>
+                         </tr> 
+                         <tr>  
+                              <td>FF32</td>  
+                              <td>ID DONE</td>  
+                              <td>Drive has performed motor identification
+                                   magnetisation and is ready for operation. This
+                                   warning belongs to normal start-up procedure</td>  
+                              <td>Continue drive operation.</td>
+                         </tr> 
+                         <tr>  
+                              <td>FF33</td>  
+                              <td>ID RUN SEL</td>  
+                              <td>Motor Identification Run is selected, and drive
+                                   is ready to start ID Run. This warning belongs
+                                   to ID Run procedure</td>  
+                              <td>Press Start key to start Identification Run</td>
+                         </tr> 
+                         <tr>  
+                              <td>FF34</td>  
+                              <td>MOTOR STARTS</td>  
+                              <td>Motor Identification Run starts. This warning
+                                   belongs to ID Run procedure</td>  
+                              <td>Wait until drive indicates that motor
+                                   identification is completed.</td>
+                         </tr> 
+                         <tr>  
+                              <td>FF35</td>  
+                              <td>ID RUN</td>  
+                              <td>Motor identification Run is on</td>  
+                              <td>Wait until drive indicates that motor
+                                   identification Run is completed</td>
+                         </tr> 
+                         <tr>  
+                              <td>FF36</td>  
+                              <td>CALIBRA REQ</td>  
+                              <td>Calibration of output current transformers is
+                                   required. Displayed at start if drive is in scalar
+                                   control (parameter 99.04) and scalar fly start
+                                   feature is on (parameter 21.08)</td>  
+                              <td>Calibration starts automatically. Wait for a
+                                   while.</td>
+                         </tr> 
+                         <tr>  
+                              <td>FF37</td>  
+                              <td>CALIBRA DONE</td>  
+                              <td>Calibration of output current transformers is
+                                   completed</td>  
+                              <td>Continue normal operation.</td>
+                         </tr> 
+                         <tr>  
+                              <td>FF38</td>  
+                              <td>HW RECONF RQ</td>  
+                              <td>Inverter type (e.g. sr0025_3) has been
+                                   changed. Inverter type is usually changed at
+                                   factory or during drive implementation</td>  
+                              <td>Wait until alarm POWEROFF! activates and
+                                   switch control board power off to validate
+                                   inverter type change</td>
+                         </tr> 
+                         <tr>  
+                              <td>FF39</td>  
+                              <td>->POWEROFF!</td>  
+                              <td>Inverter type (e.g. sr0025_3) has been
+                                   changed. Inverter type is usually changed at
+                                   factory or during drive implementation</td>  
+                              <td>Switch control board power off to validate
+                                   inverter type change</td>
+                         </tr> 
+                         <tr>  
+                              <td>FF50</td>  
+                              <td>THERMAL MODE</td>  
+                              <td>Motor thermal protection mode is set to DTC
+                                   for high-power motor</td>  
+                              <td>See parameter 30.05</td>
+                         </tr> 
+                         <tr>  
+                              <td>FF51</td>  
+                              <td>LINE CONV</td>  
+                              <td>Fault on line side converter</td>  
+                              <td>Shift panel from motor side converter control
+                                   board to line side converter control board.
+                                   See line side converter manual for fault
+                                   description.</td>
+                         </tr> 
+                         <tr>  
+                              <td>FF52</td>  
+                              <td>NO MOT DATA
+                                   03.06 FAULT WORD 2 bit 15</td>  
+                              <td>Motor data is not given or motor data does not
+                                   match with inverter data</td>  
+                              <td>Check motor data parameters
+                                   99.04 … 99.09.</td>
+                         </tr> 
+                         <tr>  
+                              <td>FF53</td>  
+                              <td>GD DISABLED</td>  
+                              <td>AGPS power supply of parallel connected R8i
+                                   inverter module has been switched off during
+                                   run. X (1…12) refers to inverter module
+                                   number.</td>  
+                              <td>Check Prevention of Unexpected Start-up
+                                   circuit.
+                                   Replace AGPS board of R8i inverter module.</td>
+                         </tr> 
+                         <tr>  
+                              <td>FF54</td>  
+                              <td>RUN DISABLED</td>  
+                              <td>No Run enable signal received</td>  
+                              <td>Check setting of parameter 16.01. Switch on
+                                   signal or check wiring of selected source.</td>
+                         </tr> 
+                         <tr>  
+                              <td>FF55</td>  
+                              <td>OVER SWFREQ
+                                   03.06 FAULT WORD 2 bit 9</td>  
+                              <td>Switching frequency is too high</td>  
+                              <td>Check motor parameter settings (parameter
+                                   group 99 START-UP DATA)
+                                   Ensure that ID run has been completed
+                                   successfully</td>
+                         </tr> 
+                         <tr>  
+                              <td>FF56</td>  
+                              <td>MOTOR PHASE
+                                   03.06 FAULT WORD 2 bit 15</td>  
+                              <td>One of motor phases is lost due to fault in
+                                   motor, motor cable, thermal relay (if used) or
+                                   internal fault</td>  
+                              <td>Check motor and motor cable.
+                                   Check thermal relay (if used).
+                                   Check Fault Function parameters. Disable this
+                                   protection.</td>
+                         </tr> 
+                         <tr>  
+                              <td>FF68</td>  
+                              <td>ID N CHANGED</td>  
+                              <td>Drive ID number has been changed from 1</td>  
+                              <td>Change ID number back to 1. See chapter
+                                   Control panel</td>
+                         </tr> 
+                         <tr>  
+                              <td>FF69</td>  
+                              <td>MACRO CHANGE</td>  
+                              <td>Macro is restoring or user macro is being
+                                   saved</td>  
+                              <td>Wait until drive has finished task.</td>
+                         </tr> 
+                         <tr>  
+                              <td>FF6A</td>  
+                              <td>UNDERLOAD
+                                   03.05 FAULT WORD 1 bit 8
+                                   03.09 ALARM WORD 2 bit 1</td>  
+                              <td>Motor load is too low due to e.g. release
+                                   mechanism in driven equipment</td>  
+                              <td>Check for problem in driven equipment.
+                                   Check Fault Function parameters.</td>
+                         </tr> 
+                         <tr>  
+                              <td>FF74</td>  
+                              <td>BRAKE ACKN
+                                   03.15 FAULT WORD 4 bit 3
+                                   03.16 ALARM WORD 4 bit 3</td>  
+                              <td>Unexpected state of brake acknowledge signal</td>  
+                              <td>See parameter group 42 BRAKE CONTROL.
+                                   Check connection of brake acknowledgement
+                                   signal</td>
+                         </tr> 
+                         <tr>  
+                              <td>FF7A</td>  
+                              <td>START INHIBI
+                                   03.03 AUXILIARY STATUS WORD bit 8
+                                   03.08 ALARM WORD 1 bit 0</td>  
+                              <td>Optional start inhibit hardware logic is
+                                   activated.</td>  
+                              <td>Check start inhibit circuit (AGPS board)</td>
+                         </tr> 
+                         <tr>  
                               <td></td>  
                               <td></td>  
                               <td></td>  
                               <td></td>
                          </tr> 
-                                              </table>  
+                         <tr>  
+                              <td></td>  
+                              <td></td>  
+                              <td></td>  
+                              <td></td>
+                         </tr> 
+                         <tr>  
+                              <td></td>  
+                              <td></td>  
+                              <td></td>  
+                              <td></td>
+                         </tr> 
+                         <tr>  
+                              <td></td>  
+                              <td></td>  
+                              <td></td>  
+                              <td></td>
+                         </tr> 
+                         <tr>  
+                              <td></td>  
+                              <td></td>  
+                              <td></td>  
+                              <td></td>
+                         </tr> 
+                         <tr>  
+                              <td></td>  
+                              <td></td>  
+                              <td></td>  
+                              <td></td>
+                         </tr> 
+                         <tr>  
+                              <td></td>  
+                              <td></td>  
+                              <td></td>  
+                              <td></td>
+                         </tr> 
+                         <tr>  
+                              <td></td>  
+                              <td></td>  
+                              <td></td>  
+                              <td></td>
+                         </tr> 
+                     </table>  
                                               
                 </div>  
            </div>  
