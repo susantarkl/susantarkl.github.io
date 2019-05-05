@@ -21,10 +21,10 @@
 			openingSpeed: 250, // how fast the dropdown should open in milliseconds
 			closingDelay: 250, // controls how long the dropdowns stay open for in milliseconds
 			showArrows: true, // shows dropdown arrows next to the items that have sub menus
-			phoneBtn: '', // adds a click-to-call phone link to the top of menu - i.e.: "18009084500"
+			/* phoneBtn: '', // adds a click-to-call phone link to the top of menu - i.e.: "18009084500"
 			phoneLabel: 'Call Us', // label for the phone button
-			locationBtn: '', // adds a location link to the top of menu - i.e.: "/location/", "http://site.com/contact-us/"
-			locationLabel: 'Location', // label for the location button
+			locationBtn: '', // adds a location link to the top of menu - i.e.: "/location/", "http://site.com/contact-us/" 
+			locationLabel: 'Location', // label for the location button */
 			closeBtn: false, // adds a close button to the end of nav
 			closeLabel: 'Close', // label for the close button
 			mobileMode: false,
