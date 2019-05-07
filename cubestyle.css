@@ -25,6 +25,7 @@ body {
 
 .card {
   width: 400px;
+  margin: 15px 15px 15px 15px;
 }
 
 .card__content {
