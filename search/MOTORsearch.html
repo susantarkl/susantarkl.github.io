@@ -1,0 +1,326 @@
+<!DOCTYPE html>  
+ <html>  
+      <head>  
+           <title>Webslesson Tutorial | Search HTML Table Data by using JQuery</title>  
+           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>  
+           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />  
+           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  
+      </head>  
+      <body>  
+           <br /><br />  
+           <div class="container" style="width:900px;">  
+                <h2 align="center">Search Table Data </h2>  
+                <h3 align="center">MOTOR DATA</h3>                 
+                <br /><br />  
+                <div align="center">  
+                     <input type="text" name="search" id="search" class="form-control" />  
+                </div>  
+                <br /><br />  
+                <div class="table-responsive" >  
+                     <table class="table table-bordered" id="employee_table">  
+                          <tr>  
+                               <th width="5%">KW</th>  
+                               <th width="20%">FRAME</th>  
+                               <th width="30%">LOCATION</th>  
+                               <th width="45%">REMARKS</th>  
+                                
+                          </tr>  
+                   
+                         <tr>  
+                              <td>345</td>  
+                              <td>500LX</td>  
+                              <td>31/MH <br> 32/MH</td>  
+                              <td></td>
+                              
+                         </tr> 
+                         <tr>  
+                              <td>220</td>  
+                              <td>450L</td>  
+                              <td>31/AH1 <br> 32/AH1 <br> 41/MH 32 </td>  
+                              <td></td>
+                         </tr> 
+                         <tr>  
+                              <td>140.3</td>  
+                              <td>400L</td>  
+                              <td>21/MH <br> 22/MH <br> 42/MH </td>  
+                              <td></td>
+                         </tr> 
+                         <tr>  
+                              <td>120</td>  
+                              <td>355L10R</td>  
+                              <td>11MH <br> 11/AH <br> 12/MH <br> 12/AH <br> 31/LT <br> 32/LT </td>  
+                              <td></td>
+                         </tr> 
+                         <tr>  
+                              <td>95</td>  
+                              <td>355M</td>  
+                              <td>51/MH <br> 52/MH <br> 61/MH <br> 62/MH</td>  
+                              <td></td>
+                         </tr> 
+                         <tr>  
+                              <td>74.8</td>  
+                              <td>355S</td>  
+                              <td>41/AH <br>   29/MH</td>  
+                              <td></td>
+                         </tr> 
+                         <tr>  
+                              <td>59.8</td>  
+                              <td>315S</td>  
+                              <td>11/LT  <br> 12/LT <br>   71/MH</td>  
+                              <td></td>
+                         </tr
+                         <tr>  
+                              <td>51</td>  
+                              <td>315S</td>  
+                              <td>21/AH <br>22/AH  <br>   42/AH</td>  
+                              <td></td>
+                         </tr
+                         <tr>  
+                              <td>48.8</td>  
+                              <td>315S</td>  
+                              <td>72/MH</td>  
+                              <td></td>
+                         </tr
+                         <tr>  
+                              <td>46.5</td>  
+                              <td>280M</td>  
+                              <td>11/AH2  <br> 12/AH2 <br>    31/MCT <br>  32/MCT  <br> 30/MH</td>  
+                              <td></td>
+                         </tr
+                         <tr>  
+                              <td>36.5</td>  
+                              <td>280S</td>  
+                              <td>31/AH2 <br>  32/AH2 <br>  41/LT</td>  
+                              <td></td>
+                         </tr
+                         <tr>  
+                              <td>32.4</td>  
+                              <td>250M6</td>  
+                              <td>21/LT <br> 22/LT   <br> 42/LT <br>  31/ACT <br>  32/ACT <br> 41/CT <br>  TONG/LT <br>  71/GRAB <br>  32/R.TROLLEY MH</td>  
+                              <td></td>
+                         </tr
+                         <tr>  
+                              <td>24.9</td>  
+                              <td>250M8</td>  
+                              <td> 51/CT   <br> 52/CT <br>  61/CT <br>  62/CT <br>  29/AH <br>   31/R.TROLLEY MH</td>  
+                              <td></td>
+                         </tr
+                         <tr>  
+                              <td>24</td>  
+                              <td>250M</td>  
+                              <td>72/GRAB</td>  
+                              <td></td>
+                         </tr
+                         <tr>  
+                              <td>20.75</td>  
+                              <td>225M6</td>  
+                              <td>11/MCT <br>   12/MCT   <br> 21/CT  <br> 22/CT <br>  42/CT </td>  
+                              <td></td>
+                         </tr
+                         <tr>  
+                              <td>16.6</td>  
+                              <td>225MA</td>  
+                              <td>13/MH <br>  23/MH  <br>  30/AH </td>  
+                              <td></td>
+                         </tr
+                         <tr>  
+                              <td>14.2</td>  
+                              <td>200L6</td>  
+                              <td>11/ACT <br>  12/ACT</td>  
+                              <td></td>
+                         </tr
+                         <tr>  
+                              <td>11.2</td>  
+                              <td>KS80L</td>  
+                              <td>29/LT <br>   30/LT</td>  
+                              <td></td>
+                         </tr
+                         <tr>  
+                              <td>7.5</td>  
+                              <td>160L</td>  
+                              <td>72/LT</td>  
+                              <td></td>
+                         </tr
+                         <tr>  
+                              <td>7.1</td>  
+                              <td>160L</td>  
+                              <td>29/CT</td>  
+                              <td></td>
+                         </tr>
+                         <tr>  
+                              <td>5.5</td>  
+                              <td>160M</td>  
+                              <td>71/LT <br>  71/CT</td>  
+                              <td></td>
+                         </tr>
+                         <tr>  
+                              <td>2.9</td>  
+                              <td>132M</td>  
+                              <td>13/LT <br> 13/CT  <br> 23/LT   <br>  23/CT</td>  
+                              <td></td>
+                         </tr>
+                         <tr>  
+                              <td>2.8</td>  
+                              <td>32MK</td>  
+                              <td>PUMP HOUSE</td>  
+                              <td></td>
+                         </tr>
+                         <tr>  
+                              <td>345</td>  
+                              <td>1LA84058AD70-Z</td>  
+                              <td>33/MH</td>  
+                              <td></td>
+                         </tr>
+                         <tr>  
+                              <td>250</td>  
+                              <td>1LA83558YB60-Z</td>  
+                              <td>43/MH <br>   33/AH</td>  
+                              <td></td>
+                         </tr>
+                         <tr>  
+                              <td>177</td>  
+                              <td>1LAS3178AB70-Z</td>  
+                              <td>14/MH</td>  
+                              <td></td>
+                         </tr>
+                         <tr>  
+                              <td>147</td>  
+                              <td>1SED3568YB80-Z</td>  
+                              <td>43/AH</td>  
+                              <td></td>
+                         </tr>
+                         <tr>  
+                              <td>164</td>  
+                              <td>1LA89AB70-Z</td>  
+                              <td>NEW TONG/MH</td>  
+                              <td></td>
+                         </tr>
+                         <tr>  
+                              <td>125</td>  
+                              <td>1SE03148YB80-Z</td>  
+                              <td>14/AH1</td>  
+                              <td></td>
+                         </tr>
+                         <tr>  
+                              <td>84</td>  
+                              <td>1SED3116YA80-Z</td>  
+                              <td>33/AH2 <br>  33LT</td>  
+                              <td></td>
+                         </tr>
+                         <tr>  
+                              <td>55</td>  
+                              <td>1SEO2116YA80-Z</td>  
+                              <td>91/CT  <br>  92/CT</td>  
+                              <td></td>
+                         </tr>
+                         <tr>  
+                              <td>45</td>  
+                              <td>1SEO2816YA80-Z</td>  
+                              <td>53/LT  <br>  53/CT  <br>  54/LT <br> 54/CT  <br> 63/LT <br> 63/CT <br>  64/LT <br>  64/CT</td>  
+                              <td></td>
+                         </tr>
+                         <tr>  
+                              <td>36</td>  
+                              <td>1SED2546YA80-Z</td>  
+                              <td>43/LT  <br>  14/LT <br>  43/CT <br>  14/AH2</td>  
+                              <td></td>
+                         </tr>
+                         <tr>  
+                              <td>30</td>  
+                              <td>1SE02546YB80-Z</td>  
+                              <td>53/AH   <br>  54/AH   <br>  63/AH   <br>   64/AH   <br>   91/AH   <br>   92/AH</td>  
+                              <td></td>
+                         </tr>
+                         <tr>  
+                              <td>30</td>  
+                              <td>1LAO2236YA80-Z</td>  
+                              <td>33/MCT</td>  
+                              <td></td>
+                         </tr>
+                         <tr>  
+                              <td>24</td>  
+                              <td>1LAO2076YA80-Z</td>  
+                              <td>33/ACT</td>  
+                              <td></td>
+                         </tr>
+                         <tr>  
+                              <td>17</td>  
+                              <td>1LAG1866YA80-Z</td>  
+                              <td>14/MCT</td>  
+                              <td></td>
+                         </tr>
+                         <tr>  
+                              <td>8</td>  
+                              <td>1SEC1636YC80-Z</td>  
+                              <td>14/ACT</td>  
+                              <td></td>
+                         </tr>
+                         <tr>  
+                              <td></td>  
+                              <td></td>  
+                              <td></td>  
+                              <td></td>
+                         </tr>
+                         <tr>  
+                              <td></td>  
+                              <td></td>  
+                              <td></td>  
+                              <td></td>
+                         </tr>
+                         <tr>  
+                              <td></td>  
+                              <td></td>  
+                              <td></td>  
+                              <td></td>
+                         </tr>
+                         <tr>  
+                              <td></td>  
+                              <td></td>  
+                              <td></td>  
+                              <td></td>
+                         </tr>
+                         <tr>  
+                              <td></td>  
+                              <td></td>  
+                              <td></td>  
+                              <td></td>
+                         </tr>
+
+
+
+
+
+               </table>  
+                                              
+                </div>  
+           </div>  
+      </body>  
+ </html>  
+ <script>  
+      $(document).ready(function(){  
+           $('#search').keyup(function(){  
+                search_table($(this).val());  
+           });  
+           function search_table(value){  
+                $('#employee_table tr').each(function(){  
+                     var found = 'false';  
+                     $(this).each(function(){  
+                          if($(this).text().toLowerCase().indexOf(value.toLowerCase()) >= 0)  
+                          {  
+                               found = 'true';  
+                          }  
+                     });  
+                     if(found == 'true')  
+                     {  
+                          $(this).show();  
+                     }  
+                     else  
+                     {  
+                          $(this).hide();  
+                     }  
+                });  
+           }  
+      });  
+ </script>  
+ 
+ 

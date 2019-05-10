@@ -1,0 +1,118 @@
+<!DOCTYPE html>  
+ <html>  
+      <head>  
+           <title>Webslesson Tutorial | Search HTML Table Data by using JQuery</title>  
+           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>  
+           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />  
+           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  
+      </head>  
+      <body>  
+           <br /><br />  
+           <div class="container" style="width:900px;">  
+                <h2 align="center">Search Table Data </h2>  
+                <h3 align="center">ACS DRIVE</h3>                 
+                <br /><br />  
+                <div align="center">  
+                     <input type="text" name="search" id="search" class="form-control" />  
+                </div>  
+                <br /><br />  
+                <div class="table-responsive" >  
+                     <table class="table table-bordered" id="employee_table">  
+                          <tr>  
+                               <th width="50%">KVA</th>  
+                               <th width="30%">LOCATION</th>  
+                                
+                               <th width="20%">REMARKS</th>  
+                                
+                          </tr>  
+                   
+                         <tr>  
+                              <td>510</td>  
+                              <td>  14/ISU <br> 33/ISU <br>  33/MH <br> 33/STANDBY <br> 33/AH1 <br> 33/LT <br> 43/ISU <br>  43/AH <br> TOTAL </td>  
+                              <td></td>  
+                         </tr> 
+                         
+                         <tr>  
+                            <td>390</td>  
+                            <td>14/MH <br> 14/MHSTANDBY <br>14/AH1 <br> 14/LT <br>43/MHSTANDBY <br> TONG/ISU <br>TONG/MH  <br>43/MH <br> TOTAL </td>  
+                            <td></td>  
+                       </tr> 
+                       
+                       <tr>  
+                        <td>320</td>  
+                        <td>33/AH2</td>  
+                        <td></td>  
+                   </tr> 
+                   <tr>  
+                    <td>260</td>  
+                    <td>43/LT</td>  
+                    <td></td>  
+               </tr> 
+               <tr>  
+                <td>210</td>  
+                <td>TONG/LT</td>  
+                <td></td>  
+           </tr> 
+           <tr>  
+            <td>175</td>  
+            <td>14/AH2</td>  
+            <td></td>  
+       </tr> 
+       <tr>  
+        <td>125</td>  
+        <td>33/MCT <br> 43/CT <br> 91/CT <br> 92/CT <br> TOTAL</td>  
+        <td></td>  
+   </tr> 
+   <tr>  
+    <td>105</td>  
+    <td> 33/ACT <br> TONG/AH <br> TONG/CT <br> TOTAL</td>  
+    <td></td>  
+</tr> 
+<tr>  
+    <td>60</td>  
+    <td>14/MCT</td>  
+    <td></td>  
+</tr> 
+<tr>  
+    <td>30</td>  
+    <td>14/ACT</td>  
+    <td></td>  
+</tr> 
+
+
+
+
+               </table>  
+                                              
+                </div>  
+           </div>  
+      </body>  
+ </html>  
+ <script>  
+      $(document).ready(function(){  
+           $('#search').keyup(function(){  
+                search_table($(this).val());  
+           });  
+           function search_table(value){  
+                $('#employee_table tr').each(function(){  
+                     var found = 'false';  
+                     $(this).each(function(){  
+                          if($(this).text().toLowerCase().indexOf(value.toLowerCase()) >= 0)  
+                          {  
+                               found = 'true';  
+                          }  
+                     });  
+                     if(found == 'true')  
+                     {  
+                          $(this).show();  
+                     }  
+                     else  
+                     {  
+                          $(this).hide();  
+                     }  
+                });  
+           }  
+      });  
+ </script>  
+ 
+ 
