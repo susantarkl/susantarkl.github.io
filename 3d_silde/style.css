@@ -1,8 +1,8 @@
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
     /* For mobile phones: */
     [class*="col-"] {
       width: 100%;
-    }
+    } */
 body
 {
   background: #262626;
@@ -35,6 +35,7 @@ body
 .swiper-slide .imgBx img
 {
   width: 100%;
+  height: 100%;
 }
 .swiper-slide .details
 {
