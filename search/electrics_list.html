@@ -1,0 +1,1036 @@
+<!DOCTYPE html>  
+ <html>  
+      <head>  
+           <title>Webslesson Tutorial | Search HTML Table Data by using JQuery</title>  
+           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>  
+           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />  
+           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  
+      </head>  
+      <body>  
+           <br /><br />  
+           <div class="container" style="width:900px;">  
+                <h2 align="center">Search Table Data </h2>  
+                <h3 align="center">DRIVE ELECTRICS</h3>                 
+                <br /><br />  
+                <div align="center">  
+                     <input type="text" name="search" id="search" class="form-control" />  
+                </div>  
+                <br /><br />  
+                <div class="table-responsive" >  
+                     <table class="table table-bordered" id="employee_table">  
+                          <tr>  
+                               <th width="15%">EQUIPMENT</th>  
+                               <th width="10%">MAKE</th>  
+                               <th width="25%">TYPE</th>
+                               <th width="10%">RATING</th>  
+                               <th width="10%">2114</th>
+                               <th width="10%">2143</th>
+                               <th width="10%">2133</th>
+                               <th width="10%">TONG</th>
+                          </tr>  
+                      
+                        <tr>
+                            <td height="38" align="left" valign=bottom><font color="#000000">ISOLATOR</font></td>
+                            <td align="left" valign=bottom><font color="#000000">ABB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">0T1250E03P</font></td>
+                            <td align="left" valign=bottom><font color="#000000">1250A</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2114/ISU</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2133/ISU</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">TONG/ISU</font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000">ACB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">ABB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">SACE EmaNO E3N3200</font></td>
+                            <td align="right" valign=bottom sdval="3200" sdnum="1033;"><font color="#000000">3200</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2133/ISU</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000">ACB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">ABB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">E1N1600</font></td>
+                            <td align="right" valign=bottom sdval="1600" sdnum="1033;"><font color="#000000">1600</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2114/ISU</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2143/ISU</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000">INCIMING AC FUSE</font></td>
+                            <td align="left" valign=bottom><font color="#000000">BUSSMANN</font></td>
+                            <td align="left" valign=bottom><font color="#000000">170M6419</font></td>
+                            <td align="left" valign=bottom><font color="#000000">1600A</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">TONG/ISU</font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000">INCIMING AC FUSE</font></td>
+                            <td align="left" valign=bottom><font color="#000000">PROTISTOR FERRAZ</font></td>
+                            <td align="left" valign=bottom><font color="#000000">PC33UD55V2000TF</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2000A</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2114/ISU</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2133/ISU</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2143/ISU</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000">POWER CONTACTOR</font></td>
+                            <td align="left" valign=bottom><font color="#000000">ABB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">AF1350-30-11</font></td>
+                            <td align="left" valign=bottom><font color="#000000">1350A</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2133/ISU</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000">POWER CONTACTOR</font></td>
+                            <td align="left" valign=bottom><font color="#000000">ABB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">AF750-30-</font></td>
+                            <td align="left" valign=bottom><font color="#000000">1050A</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2114/ISU</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2143/ISU</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000">POWER CONTACTOR</font></td>
+                            <td align="left" valign=bottom><font color="#000000">ABB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">A300-30-11</font></td>
+                            <td align="left" valign=bottom><font color="#000000">300A</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">TONG/ISU</font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000">DC FUSE</font></td>
+                            <td align="left" valign=bottom><font color="#000000">ABB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">170M8547</font></td>
+                            <td align="left" valign=bottom><font color="#000000">1250A</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2114/ISU</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2133/ISU</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2143/ISU</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000">DC FUSE</font></td>
+                            <td align="left" valign=bottom><font color="#000000">ABB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">6URD3PV1000</font></td>
+                            <td align="left" valign=bottom><font color="#000000">1000A</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">TONG/ISU</font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000">CHARGING FUSE</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">OFAA000GG63</font></td>
+                            <td align="left" valign=bottom><font color="#000000">63A/690V</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2114/ISU</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">2143/ISU</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000">CHARGING FUSE</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">OFAA000GG100</font></td>
+                            <td align="left" valign=bottom><font color="#000000">100A/690V</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">2133/ISU</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000">CHARGING FUSE</font></td>
+                            <td align="left" valign=bottom><font color="#000000">ABB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">OFAAOOGG35</font></td>
+                            <td align="left" valign=bottom><font color="#000000">35A/690V</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">TONG/ISU</font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000">ISOLATOR FUSE</font></td>
+                            <td align="left" valign=bottom><font color="#000000">BUSSMAN</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NSD16A</font></td>
+                            <td align="left" valign=bottom><font color="#000000">16A</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2114/ISU</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                        </tr>
+                        <tr>
+                            <td height="38" align="center" valign=bottom><font color="#000000">ON DELAY TIMER(11K10</font></td>
+                            <td align="left" valign=bottom><font color="#000000">ABB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">CT-ERE</font></td>
+                            <td align="left" valign=bottom><font color="#000000">0.3-30S</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">2133/ISU</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2143/ISU</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                        </tr>
+                        <tr>
+                            <td height="38" align="center" valign=bottom><font color="#000000">OFF DELAY TIMER(K3.1)</font></td>
+                            <td align="left" valign=bottom><font color="#000000">ABB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">CT-ARE</font></td>
+                            <td align="left" valign=bottom><font color="#000000">0.3-30S</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">2133/ISU</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2143/ISU</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="center" valign=bottom><font color="#000000">OFF DELAY TIMER(K3.1)</font></td>
+                            <td align="left" valign=bottom><font color="#000000">ABB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">TP 40 IA</font></td>
+                            <td align="left" valign=bottom><font color="#000000">0.1-40S</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">TONG/ISU</font></td>
+                        </tr>
+                        <tr>
+                            <td height="38" align="center" valign=bottom><font color="#000000">CHARGING RESISTOR</font></td>
+                            <td align="left" valign=bottom><font color="#000000">ABB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">CBHNO 165 C 5R 414</font></td>
+                            <td align="left" valign=bottom><font color="#000000">5 OHM</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2114/ISU</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2133/ISU</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2143/ISU</font></td>
+                            <td align="left" valign=bottom><font color="#000000">TONG/ISU</font></td>
+                        </tr>
+                        <tr>
+                            <td height="38" align="center" valign=bottom><font color="#000000">CHARGING CONTACTOR</font></td>
+                            <td align="left" valign=bottom><font color="#000000">ABB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">A50-30-11</font></td>
+                            <td align="left" valign=bottom><font color="#000000">50A</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">2133/ISU</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="center" valign=bottom><font color="#000000">CHARGING CONTACTOR</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">A30-30-10</font></td>
+                            <td align="left" valign=bottom><font color="#000000">30A</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2114/ISU</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="center" valign=bottom><font color="#000000">CHARGING CONTACTOR</font></td>
+                            <td align="left" valign=bottom><font color="#000000">ABB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">A9-30-10</font></td>
+                            <td align="left" valign=bottom><font color="#000000">9A</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">TONG/ISU</font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000">SMPS</font></td>
+                            <td align="left" valign=bottom><font color="#000000">PHOENIX</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">5A</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">2133/ISU</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2143/ISU</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000">SMPS</font></td>
+                            <td align="left" valign=bottom><font color="#000000">PHOENIX</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">2.5A</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">TONG/ISU</font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="center" valign=bottom><font color="#000000">VAF METER</font></td>
+                            <td align="left" valign=bottom><font color="#000000">CONZERV</font></td>
+                            <td align="left" valign=bottom><font color="#000000">ELF3259</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="center" valign=bottom><font color="#000000">CONTROL MCB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">ABB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">S272-C10</font></td>
+                            <td align="left" valign=bottom><font color="#000000">10A</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">2133/ISU</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2143/ISU</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="center" valign=bottom><font color="#000000">CONTROL MCB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">ABB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">S272-C6</font></td>
+                            <td align="left" valign=bottom><font color="#000000">6A</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">TONG/ISU</font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="center" valign=bottom><font color="#000000">LIGHTING MCB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">ABB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">S272-C2</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2A</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">2133/ISU</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2143/ISU</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="center" valign=bottom><font color="#000000">UPS MCB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">ABB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">S272-C4</font></td>
+                            <td align="left" valign=bottom><font color="#000000">4A</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">2133/ISU</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2143/ISU</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="center" valign=bottom><font color="#000000">UPS MCB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">ABB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">S272 C2</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2A</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">TONG/ISU</font></td>
+                        </tr>
+                        <tr>
+                            <td height="38" align="center" valign=bottom><font color="#000000">AUNO CONTACTOR</font></td>
+                            <td align="left" valign=bottom><font color="#000000">ABB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">N31E-80</font></td>
+                            <td align="left" valign=bottom><font color="#000000">AUNO</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">2133/ISU</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2143/ISU</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000">C.T</font></td>
+                            <td align="left" valign=bottom><font color="#000000">KAPPA</font></td>
+                            <td align="right" valign=bottom sdval="41.6701388888889" sdnum="1033;0;[H]:MM:SS"><font color="#000000">1000:05:00</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">2114/ISU</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">TONG/ISU</font></td>
+                        </tr>
+                        <tr>
+                            <td height="38" align="center" valign=bottom><font color="#000000">FAN BREAKER Q24</font></td>
+                            <td align="left" valign=bottom><font color="#000000">ABB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">MS111-6.3</font></td>
+                            <td align="left" valign=bottom><font color="#000000">4-6.3A</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">TONG/ISU</font></td>
+                        </tr>
+                        <tr>
+                            <td height="38" align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">MAKE</font></td>
+                            <td align="left" valign=bottom><font color="#000000">TYPE</font></td>
+                            <td align="left" valign=bottom><font color="#000000">RATING</font></td>
+                            <td align="right" valign=bottom sdval="2114" sdnum="1033;"><font color="#000000">2114</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2133/MH</font></td>
+                            <td align="right" valign=bottom sdval="43" sdnum="1033;"><font color="#000000">43</font></td>
+                            <td align="left" valign=bottom><font color="#000000">TONG</font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000">DC FUSE</font></td>
+                            <td align="left" valign=bottom><font color="#000000">BUSSMAN</font></td>
+                            <td align="left" valign=bottom><font color="#000000">170M8547</font></td>
+                            <td align="left" valign=bottom><font color="#000000">1250A</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2114/MH</font></td>
+                            <td align="left" valign=bottom><font color="#000000">&nbsp;NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2143/MH</font></td>
+                            <td align="left" valign=bottom><font color="#000000">&nbsp; NO</font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000">DC FUSE</font></td>
+                            <td align="left" valign=bottom><font color="#000000">BUSSMAN</font></td>
+                            <td align="left" valign=bottom><font color="#000000">170M8550</font></td>
+                            <td align="left" valign=bottom><font color="#000000">1600A</font></td>
+                            <td align="left" valign=bottom><font color="#000000">&nbsp;NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2133/MH</font></td>
+                            <td align="left" valign=bottom><font color="#000000">&nbsp;NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">&nbsp; NO</font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000">SF UNIT</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">0S630D03P</font></td>
+                            <td align="left" valign=bottom><font color="#000000">630A</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">TONG/MH</font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000">SF UNIT FUSE</font></td>
+                            <td align="left" valign=bottom><font color="#000000">BUSSMAN</font></td>
+                            <td align="left" valign=bottom><font color="#000000">170M8547</font></td>
+                            <td align="left" valign=bottom><font color="#000000">1250A</font></td>
+                            <td align="left" valign=bottom><font color="#000000">&nbsp;NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">&nbsp;NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">&nbsp;NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">TONG/MH</font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000">O/P ISOLATOR</font></td>
+                            <td align="left" valign=bottom><font color="#000000">ABB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">OT630E03P</font></td>
+                            <td align="left" valign=bottom><font color="#000000">630A</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2114/MH</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2143/MH</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                        </tr>
+                        <tr>
+                            <td height="38" align="left" valign=bottom><font color="#000000">O/P ISOLATOR</font></td>
+                            <td align="left" valign=bottom><font color="#000000">ABB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">OT1000E03P</font></td>
+                            <td align="left" valign=bottom><font color="#000000">1000A</font></td>
+                            <td align="left" valign=bottom><font color="#000000">&nbsp;NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2133/MH</font></td>
+                            <td align="left" valign=bottom><font color="#000000">&nbsp;NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">&nbsp; NO</font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000">O/P ISOLATOR</font></td>
+                            <td align="left" valign=bottom><font color="#000000">ABB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">T5S630</font></td>
+                            <td align="left" valign=bottom><font color="#000000">630A</font></td>
+                            <td align="left" valign=bottom><font color="#000000">&nbsp;NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">&nbsp;NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">&nbsp;NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">TONG/MH</font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000">CONTROL MCB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">ABB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">S27 C10</font></td>
+                            <td align="left" valign=bottom><font color="#000000">10A</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">2133/MH</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2143/MH</font></td>
+                            <td align="left" valign=bottom><font color="#000000">6A</font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000">LIGHTING MCB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">ABB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">S27 C2</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2A</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">2133/MH</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2143/MH</font></td>
+                            <td align="left" valign=bottom><font color="#000000">TONG/MH</font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000">UPS MCB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">ABB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">S27 C10</font></td>
+                            <td align="left" valign=bottom><font color="#000000">10A</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">2133/MH</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2143/MH</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2A</font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000">UPS MCB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">ABB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">S27 C6</font></td>
+                            <td align="left" valign=bottom><font color="#000000">6A</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">2133/MH</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2143/MH</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000">SMPS</font></td>
+                            <td align="left" valign=bottom><font color="#000000">PHOENINO</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">5A</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">2133/MH</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2143/MH</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2.5A</font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000">INVERTER</font></td>
+                            <td align="left" valign=bottom><font color="#000000">ABB</font></td>
+                            <td align="left" valign=bottom><font size=1 color="#0000C0">MS116-4.0</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2.5-4A</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">2143/MH</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000">FAN MPCB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">ABB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">MS116-6.3</font></td>
+                            <td align="left" valign=bottom><font color="#000000">4-6.3A</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">2133/MH</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000">FAN MPCB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">ABB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">MS325-1.6</font></td>
+                            <td align="left" valign=bottom><font color="#000000">1-1.6A</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">TONG/MH</font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="center" valign=bottom><font color="#000000">BRAKE MPCB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">ABB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">MS116-10</font></td>
+                            <td align="left" valign=bottom><font color="#000000">6.3-10A</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2133/MH</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2143/MH</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="center" valign=bottom><font color="#000000">BRAKE MPCB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">ABB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">M325-12.5</font></td>
+                            <td align="left" valign=bottom><font color="#000000">9-12.5A</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">TONG/MH</font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000">BRAKE CONTACTOR(K2+K22)</font></td>
+                            <td align="left" valign=bottom><font color="#000000">ABB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">K30-30-01</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">2133/MH</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2143/MH</font></td>
+                            <td align="left" valign=bottom><font color="#000000">TONG/MH</font></td>
+                        </tr>
+                        <tr>
+                            <td height="38" align="center" valign=bottom><font color="#000000">THERMISTER RELAY</font></td>
+                            <td align="left" valign=bottom><font color="#000000">MINILEC</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">2133/MH</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2143/MH</font></td>
+                            <td align="left" valign=bottom><font color="#000000">TONG/MH</font></td>
+                        </tr>
+                        <tr>
+                            <td height="38" align="center" valign=bottom><font color="#000000">AUX CONTACTOR</font></td>
+                            <td align="left" valign=bottom><font color="#000000">ABB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">N31E-80</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">2133/MH</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2143/MH</font></td>
+                            <td align="left" valign=bottom><font color="#000000">TONG/MH</font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000">DC FUSE</font></td>
+                            <td align="left" valign=bottom><font color="#000000">BUSSMAN</font></td>
+                            <td align="left" valign=bottom><font color="#000000">170M8550</font></td>
+                            <td align="left" valign=bottom><font color="#000000">1600A</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2133/AH</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2143/AH</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font size=1 color="#0000C0">170M8547</font></td>
+                            <td align="left" valign=bottom><font color="#000000">1250A</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2114/AH</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000">SFU UNIT</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">OS250D03P</font></td>
+                            <td align="left" valign=bottom><font color="#000000">250A</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">TONG/AH</font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000">SFU UNIT FUSE</font></td>
+                            <td align="left" valign=bottom><font color="#000000">BUSSMAN</font></td>
+                            <td align="left" valign=bottom><font color="#000000">170M3818</font></td>
+                            <td align="left" valign=bottom><font color="#000000">350A</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">X</font></td>
+                            <td align="left" valign=bottom><font color="#000000">TONG/AH</font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000">O/P FUSE</font></td>
+                            <td align="left" valign=bottom><font color="#000000">ABB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">OT630E03P</font></td>
+                            <td align="left" valign=bottom><font color="#000000">630A</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2133/AH</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000">ISOLATOR</font></td>
+                            <td align="left" valign=bottom><font color="#000000">ABB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">OT400E03</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">2143/AH</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000">O/P MPCB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">ABB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">T4S250</font></td>
+                            <td align="left" valign=bottom><font color="#000000">100A</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">X</font></td>
+                            <td align="left" valign=bottom><font color="#000000">X</font></td>
+                            <td align="left" valign=bottom><font color="#000000">TONG/AH</font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000">CONTROL MCB</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">10A</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2133/AH</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000">CONTROL MCB</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">6A</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">TONG/AH</font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000">LIGHTING MCB</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">2A</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2133/AH</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">TONG/AH</font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000">UPS MCB</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">2A</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">TONG/AH</font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000">UPS MCB</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">4A</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2133/AH</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">TONG/AH</font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000">SMPS</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">5A</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2133/AH</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2.5A</font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000">INVERTER FAN</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">M325-1.6</font></td>
+                            <td align="left" valign=bottom><font color="#000000">1-1.6A</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">TONG/AH</font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000">BRAKE MPCB</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">T4S250</font></td>
+                            <td align="left" valign=bottom><font color="#000000">6.3-9A</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">TONG/AH</font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000">BRAKE MPCB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">ABB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">MS116-10</font></td>
+                            <td align="left" valign=bottom><font color="#000000">6.3-10A</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2133/AH</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000">BRAKE CONTACTOR</font></td>
+                            <td align="left" valign=bottom><font color="#000000">ABB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">A30-30-10</font></td>
+                            <td align="left" valign=bottom><font color="#000000">30A</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">TONG/AH</font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000">THERMISTOR RELAY</font></td>
+                            <td align="left" valign=bottom><font color="#000000">MINILEC</font></td>
+                            <td align="left" valign=bottom><font color="#000000">WTRD1</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">TONG/AH</font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000">AUX</font></td>
+                            <td align="left" valign=bottom><font color="#000000">ABB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">N31E</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">TONG/AH</font></td>
+                        </tr>
+                        <tr>
+                            <td height="38" align="left" valign=bottom><font color="#000000">DC FUSE</font></td>
+                            <td align="left" valign=bottom><font color="#000000">FERRAZ</font></td>
+                            <td align="left" valign=bottom><font color="#000000">9URD3PV1000</font></td>
+                            <td align="right" valign=bottom sdval="1000" sdnum="1033;"><font color="#000000">1000</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">2133/AH2</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">170M6810D</font></td>
+                            <td align="left" valign=bottom><font color="#000000">630A</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2144/AJ2</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                        </tr>
+                        <tr>
+                            <td height="38" align="left" valign=bottom><font color="#000000">O/P ISOLATOR</font></td>
+                            <td align="left" valign=bottom><font color="#000000">ABB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">0T200E03P</font></td>
+                            <td align="left" valign=bottom><font color="#000000">200A</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">2133/AH2</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000">O/P ISOLATOR</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">OT100F3</font></td>
+                            <td align="left" valign=bottom><font color="#000000">100A</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2144/AJ2</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000">BRAKE MPCB </font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                        </tr>
+                        <tr>
+                            <td height="38" align="left" valign=bottom><font color="#000000">DC FUSE</font></td>
+                            <td align="left" valign=bottom><font color="#000000">ABB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">170M3818D</font></td>
+                            <td align="left" valign=bottom><font color="#000000">350A</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2133/MCT</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2143/MCT</font></td>
+                            <td align="left" valign=bottom><font color="#000000">TONG/MCT</font></td>
+                        </tr>
+                        <tr>
+                            <td height="38" align="left" valign=bottom><font color="#000000">DC FUSE</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">SIZE-DIN1 170M1570</font></td>
+                            <td align="left" valign=bottom><font color="#000000">200A</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2114/MCT</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                        </tr>
+                        <tr>
+                            <td height="38" align="left" valign=bottom><font color="#000000">O/P ISOLATOR</font></td>
+                            <td align="left" valign=bottom><font color="#000000">ABB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">OT100F3</font></td>
+                            <td align="left" valign=bottom><font color="#000000">100A</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2133/MCT</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000">O/P MCCB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">ABB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">T3S250</font></td>
+                            <td align="left" valign=bottom><font color="#000000">160A</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">TONG/MCT</font></td>
+                        </tr>
+                        <tr>
+                            <td height="38" align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">ABB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">OT100F3</font></td>
+                            <td align="left" valign=bottom><font color="#000000">100A</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2114/MCT</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2143/MCT</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000">SFU UNIT</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">OS250D03P</font></td>
+                            <td align="left" valign=bottom><font color="#000000">250A</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">NO</font></td>
+                            <td align="left" valign=bottom><font color="#000000">TONG/MCT</font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000">DC FUSE</font></td>
+                            <td align="left" valign=bottom><font color="#000000">BUSSMEN</font></td>
+                            <td align="left" valign=bottom><font color="#000000">170M8550</font></td>
+                            <td align="left" valign=bottom><font color="#000000">1600A</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">2133/LT</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000">DC FUSE</font></td>
+                            <td align="left" valign=bottom><font color="#000000">BUSSMEN</font></td>
+                            <td align="left" valign=bottom><font color="#000000">170M3818</font></td>
+                            <td align="left" valign=bottom><font color="#000000">350A</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">2143/LT</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000">DC FUSE</font></td>
+                            <td align="left" valign=bottom><font color="#000000">FERRAZ</font></td>
+                            <td align="left" valign=bottom><font color="#000000">T32C591</font></td>
+                            <td align="left" valign=bottom><font color="#000000">800A</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2114/LT</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">TONG/LT</font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000">O/P/ISOLATOR</font></td>
+                            <td align="left" valign=bottom><font color="#000000">ABB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">OT200E03P</font></td>
+                            <td align="left" valign=bottom><font color="#000000">200A</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">2133/LT</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">ABB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">OT100F3</font></td>
+                            <td align="left" valign=bottom><font color="#000000">100A</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2114/LT</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">2143/LT</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000">O/P MPCB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">ABB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">MS495-100</font></td>
+                            <td align="left" valign=bottom><font color="#000000">100A</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">TONG/LT</font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000">SFU UNIT</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">OS630D03P</font></td>
+                            <td align="left" valign=bottom><font color="#000000">630A</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">TONG/LT</font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000">DC FUSE</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">170M3818D</font></td>
+                            <td align="left" valign=bottom><font color="#000000">350A</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">2133/LT</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000">DC FUSE</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">SIZE-DIN1 170M1569D</font></td>
+                            <td align="left" valign=bottom><font color="#000000">160A</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2114/LT</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000">O/P ISOLATOR</font></td>
+                            <td align="left" valign=bottom><font color="#000000">ABB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">OT100F3</font></td>
+                            <td align="left" valign=bottom><font color="#000000">100A</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000">2133/LT</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                        </tr>
+                        <tr>
+                            <td height="19" align="left" valign=bottom><font color="#000000">O/P ISOLATOR</font></td>
+                            <td align="left" valign=bottom><font color="#000000">ABB</font></td>
+                            <td align="left" valign=bottom><font color="#000000">OT63F3</font></td>
+                            <td align="left" valign=bottom><font color="#000000">63A</font></td>
+                            <td align="left" valign=bottom><font color="#000000">2114/LT</font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                            <td align="left" valign=bottom><font color="#000000"><br></font></td>
+                        </tr>
+                        
+               </table>  
+                                              
+                </div>  
+           </div>  
+      </body>  
+ </html>  
+ <script>  
+      $(document).ready(function(){  
+           $('#search').keyup(function(){  
+                search_table($(this).val());  
+           });  
+           function search_table(value){  
+                $('#employee_table tr').each(function(){  
+                     var found = 'false';  
+                     $(this).each(function(){  
+                          if($(this).text().toLowerCase().indexOf(value.toLowerCase()) >= 0)  
+                          {  
+                               found = 'true';  
+                          }  
+                     });  
+                     if(found == 'true')  
+                     {  
+                          $(this).show();  
+                     }  
+                     else  
+                     {  
+                          $(this).hide();  
+                     }  
+                });  
+           }  
+      });  
+ </script>  
+ 
+ 
